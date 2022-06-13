@@ -1,0 +1,32 @@
+   Compiling qq-group-name-extract v0.1.0 (C:\Users\ruosh\Documents\Windows\work\其它共\3. 群成员统计\qq-group-name-extract)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.06s
+     Running `target\debug\qq-group-name-extract.exe -vvv '../1.纽约工作组（561448757）/'`
+[2022-06-13T12:50:56Z INFO  qq_group_name_extract] Given path: ["../1.纽约工作组（561448757）/"]
+[2022-06-13T12:50:56Z INFO  qq_group_name_extract] Converting path: "../1.纽约工作组（561448757）/20211109.html"
+[2022-06-13T12:50:56Z DEBUG qq_group_name_extract::qqtable] Row: Row {
+        headers: {
+            "": 9,
+            "QQ号": 4,
+            "<div class=\"group-ff\">\n                    <div class=\"group-desc\">\n                        <a class=\"link\">入群时间</a> <i class=\"arrow\"></i>\n                        <i class=\"icon-more-select\"></i>\n                        <ul class=\"group-desc-arrow\">\n                            <li cmd=\"desc\" idx=\"0\" data-idx=\"0\" data-tag=\"jointime\">\n                                默认\n                            </li>\n                            <li data-idx=\"0\" data-tag=\"jointime\" order=\"0\" idx=\"11\" cmd=\"desc\">\n                                <a data-tag=\"jointime\" data-idx=\"0\">入群时间</a>\n                                <i class=\"icon-arrow-desc\"></i>\n                            </li>\n                            <li data-idx=\"1\" cmd=\"desc\" idx=\"10\" data-tag=\"jointime\" order=\"1\">\n                                <a data-tag=\"jointime\" data-idx=\"1\">入群时间</a>\n                                <i class=\"icon-arrow-desc1\"></i>\n                            </li>\n                        </ul>\n                    </div>\n                </div>": 7,
+            "群昵称": 3,
+            "<div class=\"group-ff\">\n                    <div class=\"group-desc\">\n                        <a class=\"link\">最后发言</a> <i class=\"arrow\"></i>\n                        <i class=\"icon-more-select\"></i>\n                        <ul class=\"group-desc-arrow\">\n                            <li data-idx=\"0\" data-tag=\"lastmsg\" cmd=\"desc\" idx=\"0\">\n                                默认\n                            </li>\n                            <li order=\"0\" data-idx=\"0\" cmd=\"desc\" idx=\"17\" data-tag=\"lastmsg\">\n                                <a data-tag=\"orderspeak\" data-idx=\"0\">最后发言</a>\n                                <i class=\"icon-arrow-desc\"></i>\n                            </li>\n                            <li cmd=\"desc\" data-tag=\"lastmsg\" idx=\"16\" order=\"1\" data-idx=\"1\">\n                                <a data-tag=\"orderspeak\" data-idx=\"1\">最后发言</a>\n                                <i class=\"icon-arrow-desc1\"></i>\n                            </li>\n                        </ul>\n                    </div>\n                </div>": 8,
+            "<div class=\"group-ff\">\n                    <div class=\"group-desc\">\n                        <a class=\"link\">Q龄</a> <i class=\"arrow\"></i>\n                        <i class=\"icon-more-select\"></i>\n                        <ul class=\"group-desc-arrow\">\n                            <li data-tag=\"age\" idx=\"0\" cmd=\"desc\" data-idx=\"0\">\n                                默认\n                            </li>\n                            <li data-idx=\"0\" idx=\"9\" cmd=\"desc\" order=\"0\" data-tag=\"age\">\n                                <a data-tag=\"age\" data-idx=\"0\">Q龄</a>\n                                <i class=\"icon-arrow-desc\"></i>\n                            </li>\n                            <li order=\"1\" data-idx=\"1\" idx=\"8\" cmd=\"desc\" data-tag=\"age\">\n                                <a data-tag=\"age\" data-idx=\"1\">Q龄</a>\n                                <i class=\"icon-arrow-desc1\"></i>\n                            </li>\n                        </ul>\n                    </div>\n                </div>": 6,
+            "性别": 5,
+            "成员": 2,
+        },
+        cells: [
+            "",
+            "1",
+            "<a class=\"group-master-a\"><i class=\"icon-group-master\"></i></a>\n\n                <img src=\"//q4.qlogo.cn/g?b=qq&amp;nk=1452313818&amp;s=140\" class=\"\" id=\"useIcon1452313818\">\n\n                <span> 秘书组 </span>",
+            "<span class=\"white\"> </span>",
+            "1452313818",
+            "男",
+            "11年",
+            "2018/02/26",
+            "2021/11/01",
+            "",
+        ],
+    }
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: ParseError { kind: Custom(UnsupportedPseudoClassOrElement("has")), location: SourceLocation { line: 0, column: 15 } }', src\qqtable.rs:58:85
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: process didn't exit successfully: `target\debug\qq-group-name-extract.exe -vvv '../1.纽约工作组（561448757）/'` (exit code: 101)

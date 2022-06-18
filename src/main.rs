@@ -78,19 +78,19 @@ fn convert_html<T: AsRef<Path>>(path: T) -> Result<()> {
         "群昵称",
         "QQ号",
         "性别",
-        "Q龄",
+        // "Q龄",
         "入群时间",
     ])
     .wrap_err("Failed to write csv header")?;
 
-    for (i, member) in table.iter().enumerate() {
+    for (_i, member) in table.iter().enumerate() {
         wtr.write_record(&[
             // &i.to_string(),
             &member.qq_name,
             &member.group_name,
             &member.qq_name,
             &member.gender.to_string(),
-            &member.qq_age.to_string(),
+            // &member.qq_age.to_string(),
             &member.joined_date.to_string(),
         ])
         .wrap_err_with(|| format!("Filed to write record {member:?}"))?;
